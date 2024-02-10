@@ -1,4 +1,5 @@
 import argparse
+
 from podcast import get_episode_list_from_podcast
 from generator import generate_rss_from_podcast_data
 
@@ -13,7 +14,7 @@ def main():
     elif podcast == []:
         print("Problemi durante il download dei dati :(")
     else:
-        generate_rss_from_podcast_data(podcast,"podcast.xml")
+        generate_rss_from_podcast_data(podcast,f"{args.nomeprogramma}.xml")
 
 
 if __name__ == '__main__':
