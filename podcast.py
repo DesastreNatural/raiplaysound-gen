@@ -1,7 +1,7 @@
 import requests
 
 BASE_URL = "https://www.raiplaysound.it/"
-
+exceptions = []
 class Genre:
     def __init__(self,json_elem):
         self.title = json_elem.get("title",json_elem.get("unique_name",""))
